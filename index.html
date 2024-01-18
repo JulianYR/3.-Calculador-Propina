@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Calculador de Propina</title>
+    </head>
+    <body>
+        
+        <div id="container">
+
+            <h1>Calculador de Propina</h1>
+
+            <div class="p1">
+
+                <h2>Cuanto fue el total de su factura.</h2>
+                <input type="text" name="p1" id="textP1">
+
+            </div>
+            <div class="p2">
+
+                <h2>Que tan bueno fue el trato recibido</h2>
+
+                <input type="radio" name="p2" id="bueno">
+                <label for="bueno">Bueno(suma $5 a la cuenta) <br></label>
+
+                <input type="radio" name="p2" id="decente">
+                <label for="decente">Decente(suma $3 a la cuenta) <br></label>
+
+                <input type="radio" name="p2" id="malo">
+                <label for="malo">Malo(suma $1 a la cuenta)</label>
+
+            </div>
+            <div class="p3">
+
+                <h2>Que porcentaje desea dejar de Propina</h2>
+                <input type="text" name="p3" id="textP3">
+
+            </div>
+
+            <div class="indicador">
+
+                <h3>Propina</h3>
+                <p>$<span id="propinaCalculada"></span></p>
+
+            </div>
+
+            <input type="button" id="send" value="Enviar">
+
+        </div>
+
+        <script src="./scritp.js"></script>
+
+    </body>
+</html>
